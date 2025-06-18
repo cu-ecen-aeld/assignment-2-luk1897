@@ -4,8 +4,11 @@ CFLAGS = -Wall -g
 TARGET = writer
 SRC = writer.c
 
+RM=rm
+RFLAGS= -f
+
 all: clean $(TARGET)
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean: 
-	rm -f *.o writer
+	$(RM) $(RFLAGS) *.o $(TARGET)
