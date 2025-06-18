@@ -7,7 +7,7 @@ SRC = writer.c
 RM=rm
 RFLAGS= -f
 
-all: clean $(TARGET)
+all: 
 	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean: 
